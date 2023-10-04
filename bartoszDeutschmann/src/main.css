@@ -1,0 +1,78 @@
+:root {
+  --nav-height: 65px;
+}
+
+* {
+  font-family: Poppins, Roboto;
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background: #fefae0;
+}
+
+main {
+  display: flex;
+  align-items: center;
+}
+
+.documentTitle {
+  margin-left: 10px;
+}
+
+.navBar {
+  height: var(--nav-height);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ccd5ae;
+  gap: 2%;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.section > ul {
+  margin-left: 10px;
+}
+
+.section > ul > li {
+  list-style: circle;
+  margin-left: 15px;
+}
+
+.readingSection > li,
+ul {
+  padding: 10px;
+}
+
+.readingSection {
+  width: 65%;
+  margin: 15px 0px;
+  background: #faedcd;
+  padding: 10px;
+  scroll-margin-top: calc(var(--nav-height) + 2rem);
+}
+
+.one {
+  margin-top: 100px;
+}
+
+.picture {
+  margin: 10px;
+}
